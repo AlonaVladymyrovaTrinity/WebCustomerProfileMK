@@ -1,78 +1,275 @@
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+<head>
+    <title>Mary kay invitation!</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Include Bootstrap Datepicker -->
+      <link href="assets/css/bootstrap1.css" rel="stylesheet">
+       <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap-datetimepicker.min.css">
+       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <!-- Include Bootstrap CSS -->
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>invitation!</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://unpkg.com/jquery"></script>
-        <script src="https://surveyjs.azureedge.net/1.0.49/survey.jquery.js"></script>
-        <link href="https://surveyjs.azureedge.net/1.0.49/survey.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./index.css">
-  </head>
-  <body>
-	<div>
-<div id="surveyElement"></div>
-        <div id="surveyResult"></div>
-        <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
-    <form>
-    <div class="col-md-4 mb-3">
-      <label for="validationDefault01">First name</label>
-      <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationDefault02">Last name</label>
-      <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
-    </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-<select class="custom-select">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-  </div>
 
-  <button type="submit" class="btn btn-primary">Next</button>
-</form>
-</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <!-- Include SmartWizard CSS -->
+    <link href="dist/css/smart_wizard.css" rel="stylesheet" type="text/css" />
+
+    <!-- Optional SmartWizard theme -->
+    <link href="dist/css/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
+    <!-- Include surveyElement JS and CSS -->
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="survey/survey.jquery.js"></script>
+    <link href="survey/survey.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+
+        <!-- SmartWizard 1 html -->
+        <div id="smartwizard">
+            <ul>
+                <li><a href="#step-1">Step 1<br /><small>This is step description</small></a></li>
+                <li><a href="#step-2">Step 2<br /><small>This is step description</small></a></li>
+                <li><a href="#step-3">Step 3<br /><small>This is step description</small></a></li>
+                <li><a href="#step-4">Step 4<br /><small>This is step description</small></a></li>
+            </ul>
+
+            <div>
+                <div id="step-1" class="">
+                    <h4>Step 1. I am interesting in learning more about:</h4>
+                    <div id="surveyElement"></div>
+                    <div id="surveyResult"></div>
+                    <script type="text/javascript" src="survey/index.js"></script>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault01">First name</label>
+                                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+                             </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault02">Last name</label>
+                                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div  class='input-append' id='datetimepicker4'>
+                                    <label class="form-control-label" for="inputBirthday">Birthday</label>
+                                    <input class='form-control-birthday-data' id="inputBirthday" placeholder="Birthday" data-format='MM-dd-yyyy' type='text' />
+                                    <div class='input-append add-on'>
+                                        <i class='fa fa-calendar' data-date-icon='icon-calendar' data-time-icon='icon-time'>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <script type='text/javascript'>
+                                $(function() {
+                                    $('#datetimepicker4').datetimepicker({
+                                        pickTime: false
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputOccupation">Occupation</label>
+                                <input type="text" class="form-control" id="inputOccupation" placeholder="Occupation">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Number, Street, Apartment, studio, or floor">
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Hostess">
+                                <label class="form-check-label" for="Hostess">
+                                    Hostess
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">City</label>
+                                <input type="text" placeholder="City" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option selected="" value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="PR">Puerto Rico</option><option value="VI">Virgin Islands</option><option value="MP">Northern Mariana Islands</option><option value="GU">Guam</option><option value="AS">American Samoa</option><option value="PW">Palau</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" placeholder="Zip code" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="form-group col-md-6">
+                                <label for="tel-input">Telephone</label>
+                                <input class="form-control" type="tel" placeholder="(555)-555-5555" value="" id="tel-input">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email-input" ">Email</label>
+                                <input class="form-control" type="email" placeholder="bootstrap@example.com" value="" id="email-input">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="step-2" class="">
+                    <h4>Step 2. Who can I share your product wish list with?</h4>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="inputName01">Name</label>
+                            <input type="text" class="form-control" id="inputName01" placeholder="Name" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputRelationship01">Relationship</label>
+                            <input type="text" class="form-control" id="inputRelationship01" placeholder="Relationship" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputContact01">Contact information</label>
+                            <input type="text" class="form-control" id="inputContact01" placeholder="Contact information" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="inputName02">Name</label>
+                            <input type="text" class="form-control" id="inputName02" placeholder="Name" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputRelationship02">Relationship</label>
+                            <input type="text" class="form-control" id="inputRelationship02" placeholder="Relationship" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputContact02">Contact information</label>
+                            <input type="text" class="form-control" id="inputContact02" placeholder="Contact information" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="inputName03">Name</label>
+                            <input type="text" class="form-control" id="inputName03" placeholder="Name" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputRelationship03">Relationship</label>
+                            <input type="text" class="form-control" id="inputRelationship03" placeholder="Relationship" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputContact03">Contact information</label>
+                            <input type="text" class="form-control" id="inputContact03" placeholder="Contact information" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="inputName04">Name</label>
+                            <input type="text" class="form-control" id="inputName04" placeholder="Name" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputRelationship04">Relationship</label>
+                            <input type="text" class="form-control" id="inputRelationship04" placeholder="Relationship" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="inputContact04">Contact information</label>
+                            <input type="text" class="form-control" id="inputContact04" placeholder="Contact information" value="" required>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="step-3" class="">
+                    dfsdgdfgfdgfg
+                    <div>
+                        <select class="custom-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+                <div id="step-4" class="">
+                  <h2>Step 4 Content</h2>
+                  <div class="card">
+                      <div class="card-header">My Details</div>
+                      <div class="card-block p-0">
+                        <table class="table">
+                            <tbody>
+                                <tr> <th>Name:</th> <td>Tim Smith</td> </tr>
+                                <tr> <th>Email:</th> <td>example@example.com</td> </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Include SmartWizard JavaScript source -->
+    <script type="text/javascript" src="dist/js/jquery.smartWizard.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            // Step show event
+            $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
+               //alert("You are on step "+stepNumber+" now");
+               if(stepPosition === 'first'){
+                   $("#prev-btn").addClass('disabled');
+               }else if(stepPosition === 'final'){
+                   $("#next-btn").addClass('disabled');
+               }else{
+                   $("#prev-btn").removeClass('disabled');
+                   $("#next-btn").removeClass('disabled');
+               }
+            });
+
+            // Toolbar extra buttons
+            var btnFinish = $('<button></button>').text('Finish')
+                                             .addClass('btn btn-info')
+                                             .on('click', function(){ alert('Finish Clicked'); });
+            var btnCancel = $('<button></button>').text('Cancel')
+                                             .addClass('btn btn-danger')
+                                             .on('click', function(){ $('#smartwizard').smartWizard("reset"); });
+
+            // Please note enabling option "showStepURLhash" will make navigation conflict for multiple wizard in a page.
+            // so that option is disabling => showStepURLhash: false
+
+            // Smart Wizard 1
+            $('#smartwizard').smartWizard({
+                    selected: 0,
+                    theme: 'arrows',
+                    transitionEffect:'fade',
+                    showStepURLhash: false,
+                    toolbarSettings: {toolbarPosition: 'both',
+                                      toolbarExtraButtons: [btnFinish, btnCancel]
+                                    }
+            });
+
+            // Smart Wizard 2
+            $('#smartwizard2').smartWizard({
+                    selected: 0,
+                    theme: 'default',
+                    transitionEffect:'fade',
+                    showStepURLhash: false
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+</body>
 </html>
-
-
-

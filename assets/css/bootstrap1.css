@@ -1,0 +1,50 @@
+/*.form-control-birthday-data  {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}*/
+.form-control-label  {
+  margin-otp: 0px;
+}
+
+.form-control-birthday-data {
+  display: inline-block;
+  width: 60%;
+  margin:  35px 0px 10px 10px;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem 0px 0px .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+  display: inline-block;
+  background-color: #f5f5f5;
+  width: auto;
+  margin:  35px 10px 10px 0px;
+  height: calc(2.25rem + 2px);
+  padding: .376rem .75rem;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 0px .25rem .25rem 0px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+
